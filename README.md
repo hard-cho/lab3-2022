@@ -78,7 +78,23 @@
 ## Задание 3
 ### Пошагово выполнить задания из видео-материала «Интеграция игровых сервисов в готовое приложение» с описанием и примерами реализации задач.
 Ход работы:
-1. 
+1. File -> build settings  -> добавим нашу сцену  ->  webgl  -> install with unity hub
+2. установить webgl build support
+3. switch platform
+4. player settings -> normal quality
+5. compression format: disabled
+6. build and run
+7. работает??
+8. импортировать pluginYG
+9. В каждой сцене нашеего объекта должен быть объект YandexGame
+10. player settings -> resolution and presentation -> pluginYG 
+11. build
+12. отдельная папка под яндекс
+13. проверим. открыввем index с помощью VSC 109 cnhjr
+14. делаем архив зип из яндекс билда
+15. в черновик загружаем наш архив.
+16. проверим, что черновик работает
+17. сохраняем
  
 ## Выводы
 
