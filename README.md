@@ -59,11 +59,11 @@ public class EnergyShield : MonoBehaviour
 }
 ```
 
-3. Подключить созданный скрипт к объекту EnergyShield. Проверить, что щит перемещается вслед за курсором мыши.
+2. Подключить созданный скрипт к объекту EnergyShield. Проверить, что щит перемещается вслед за курсором мыши.
 
 ![bandicam 2022-10-24 14-31-38-483](https://user-images.githubusercontent.com/74662720/197574368-e2d29df3-6f34-4924-a15a-8a8d5317cf93.gif)
 
-5. Модифицировать скрипт EnergyShield. Добавить метод OnCollisionEnter. Таким образом, будет реализована ловля объектов.
+3. Модифицировать скрипт EnergyShield. Добавить метод OnCollisionEnter. Таким образом, будет реализована ловля объектов.
 
 ```c#
 private void OnCollisionEnter(Collision other)
@@ -76,35 +76,106 @@ private void OnCollisionEnter(Collision other)
     }
 ```
 
-7. Проверить, что при пересечении щита и яйца DragonEgg исчезает.
+4. Проверить, что при пересечении щита и яйца DragonEgg исчезает.
 
 ![bandicam 2022-10-24 14-35-13-100](https://user-images.githubusercontent.com/74662720/197575764-e7a6ede9-268f-4d37-ad58-ea50bdada3e0.gif)
 
-9. Создать TextMeshPro, который в будущем будет хранить значения набранных очков. Дать этому объекту имя Score.
+5. Создать TextMeshPro, который в будущем будет хранить значения набранных очков. Дать этому объекту имя Score.
 
 ![создали score](https://user-images.githubusercontent.com/74662720/197576188-3df9a22f-581f-4e78-999c-b3b3ef1cae61.png)
 
-11. Настроить Canvas. В свойстве Render Mode назначить Screen Space - Camera, а в качестве Render Camera назначить Main Camera. Свойству Plane Distance установить значение 10.
+6. Настроить Canvas. В свойстве Render Mode назначить Screen Space - Camera, а в качестве Render Camera назначить Main Camera. Свойству Plane Distance установить значение 10.
 
 ![настроили canvas](https://user-images.githubusercontent.com/74662720/197576334-29a270c6-686b-4355-ad88-bd747ddccf59.png)
 
-13. Настроить положение объекта Score.
+7. Настроить положение объекта Score.
 
 ![настроили положение и размер](https://user-images.githubusercontent.com/74662720/197576486-2d272ba8-f6ac-4531-a0c7-257f518b7843.png)
 
-15. Проверить работоспособность.
+8. Проверить работоспособность.
 
 ![какая-то надпись в углу экрана](https://user-images.githubusercontent.com/74662720/197576524-a1116ab5-8555-49b3-b6da-02f79ae3912b.png)
 
 
 #### Часть 2 - создание графического пользовательского интерфейса.
 Ход работы:
-1. Модифицируем скрипт EnergyShield. Подключим библиотеку TMPro, создадим публичную переменную и допишем метод Start. Теперь в сцене вместо Score появился 0
-2. Продолжаем модифицировать скрипт EnergyShield, а именно метод OnCollisionEnter. 
-3. Проверим, что счётчик очков увеличивается при ловле яиц.
-4. Модифицируем скрипт DragonEgg.
-5. Модифицируем скрипт DragonPicker, а именно создаём новый метод.
-6. Проверить работоспособность. (яйцо, которое летело следом также удаляется)
+1. Модифицировать скрипт EnergyShield. Подключить библиотеку TMPro, создадать публичную переменную scoreGT и написать метод Start. Теперь в сцене вместо Score появился 0.
+
+![появился нолик](https://user-images.githubusercontent.com/74662720/197576972-db4f2077-f333-4b88-ad5b-8c271a391a0d.png)
+
+3. Продолжить дополнение скрипта EnergyShield, а именно метода OnCollisionEnter. Теперь скрипт выглядит следующим образом:
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class EnergyShield : MonoBehaviour
+{
+    public TextMeshProUGUI scoreGT;
+
+    void Start()
+    {
+        GameObject scoreGO = GameObject.Find("Score");
+        scoreGT = scoreGO.GetComponent<TextMeshProUGUI>();
+        scoreGT.text = "0";
+    }
+
+    void Update()
+    {
+        Vector3 mousePos2D = Input.mousePosition;
+        mousePos2D.z = -Camera.main.transform.position.z;
+        Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
+        Vector3 pos = this.transform.position;
+        pos.x = mousePos3D.x;
+        this.transform.position = pos;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        GameObject Collided = other.gameObject;
+        if (Collided.tag == "Dragon Egg")
+        {
+            Destroy(Collided);
+        }
+        int score = int.Parse(scoreGT.text);
+        score += 1;
+        scoreGT.text = score.ToString();
+    }
+}
+```
+5. Проверить, что счётчик очков увеличивается при ловле яиц.
+
+![bandicam 2022-10-24 15-26-18-121](https://user-images.githubusercontent.com/74662720/197577863-d2a4bf33-9f4c-4161-aaa6-5b2dafa8b797.gif)
+
+7. Модифицировать скрипт DragonEgg - дополнить метод Update.
+
+```c#
+void Update()
+    {
+        if (transform.position.y < bottomY)
+        {
+            Destroy(this.gameObject);
+            DragonPicker apScript = Camera.main.GetComponent<DragonPicker>();
+            apScript.DestroyDragonEgg();
+        }
+    }
+```
+
+9. Модифицировать скрипт DragonPicker, а именно создать новый метод DestroyDragonEgg.
+
+```c#
+public void DestroyDragonEgg()
+    {
+        dragonEggList = new List<GameObject>();
+        dragonEggList.Add(GameObject.FindGameObjectWithTag("Dragon Egg"));
+        foreach (GameObject tGO in dragonEggList)
+        {
+            Destroy(tGO);
+        }
+    }
+```
 
 ## Задание 2
 ### Используя видео-материалы практических работ 3 и 4, повторить реализацию игровых механик:
