@@ -8,8 +8,8 @@
 | Задание | Выполнение | Баллы |
 | ------ | ------ | ------ |
 | Задание 1 | * | 60 |
-| Задание 2 | # | 20 |
-| Задание 3 | # | 20 |
+| Задание 2 | * | 20 |
+| Задание 3 | * | 20 |
 
 знак "*" - задание выполнено; знак "#" - задание не выполнено;
 
@@ -39,13 +39,51 @@
 #### Часть 1 - реализация перемещения щита и ловли объектов.
 Ход работы:
 1. Создать скрипт EnergyShield, который будет отвечать за перемещение щита за курсором мыши.
-2. Подключить созданный скрипт к объекту EnergyShield. Проверить, что щит перемещается вслед за курсором мыши.
-3. Модифицируем скрипт EnergyShield. Добавим метод OnCollisionEnter. Таким образом, мы реализуем ловлю объектов.
-4. Проверим, что при пересечении щита и яйца DragonEgg исчезает.
-5. Создадим TextMeshPro, который в будущем будет хранить значения набранных очков. Дать этому объекту имя Score.
-6. Настроить Canvas. В свойстве Render Mode назначить Screen Space - Camera, а в качестве Render Camera назначить Main Camera. Свойству Plane Distance установить значение 10.
-7. Переместить объект score.
-8. Проверить работоспособность.
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnergyShield : MonoBehaviour
+{
+    void Update()
+    {
+        Vector3 mousePos2D = Input.mousePosition;
+        mousePos2D.z = -Camera.main.transform.position.z;
+        Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
+        Vector3 pos = this.transform.position;
+        pos.x = mousePos3D.x;
+        this.transform.position = pos;
+    }
+}
+```
+
+3. Подключить созданный скрипт к объекту EnergyShield. Проверить, что щит перемещается вслед за курсором мыши.
+
+![bandicam 2022-10-24 14-31-38-483](https://user-images.githubusercontent.com/74662720/197574368-e2d29df3-6f34-4924-a15a-8a8d5317cf93.gif)
+
+5. Модифицировать скрипт EnergyShield. Добавить метод OnCollisionEnter. Таким образом, будет реализована ловля объектов.
+
+```c#
+private void OnCollisionEnter(Collision other)
+    {
+        GameObject Collided = other.gameObject;
+        if (Collided.tag == "Dragon Egg")
+        {
+            Destroy(Collided);
+        }
+    }
+```
+
+7. Проверить, что при пересечении щита и яйца DragonEgg исчезает.
+
+![bandicam 2022-10-24 14-35-13-100](https://user-images.githubusercontent.com/74662720/197575764-e7a6ede9-268f-4d37-ad58-ea50bdada3e0.gif)
+
+9. Создадим TextMeshPro, который в будущем будет хранить значения набранных очков. Дать этому объекту имя Score.
+10. Настроить Canvas. В свойстве Render Mode назначить Screen Space - Camera, а в качестве Render Camera назначить Main Camera. Свойству Plane Distance установить значение 10.
+11. Переместить объект score.
+12. Проверить работоспособность.
 
 #### Часть 2 - создание графического пользовательского интерфейса.
 Ход работы:
