@@ -103,7 +103,7 @@ private void OnCollisionEnter(Collision other)
 
 ![появился нолик](https://user-images.githubusercontent.com/74662720/197576972-db4f2077-f333-4b88-ad5b-8c271a391a0d.png)
 
-3. Продолжить дополнение скрипта EnergyShield, а именно метода OnCollisionEnter. Теперь скрипт выглядит следующим образом:
+2. Продолжить дополнение скрипта EnergyShield, а именно метода OnCollisionEnter. Теперь скрипт выглядит следующим образом:
 
 ```c#
 using System.Collections;
@@ -145,11 +145,11 @@ public class EnergyShield : MonoBehaviour
     }
 }
 ```
-5. Проверить, что счётчик очков увеличивается при ловле яиц.
+3. Проверить, что счётчик очков увеличивается при ловле яиц.
 
 ![bandicam 2022-10-24 15-26-18-121](https://user-images.githubusercontent.com/74662720/197577863-d2a4bf33-9f4c-4161-aaa6-5b2dafa8b797.gif)
 
-7. Модифицировать скрипт DragonEgg - дополнить метод Update.
+4. Модифицировать скрипт DragonEgg - дополнить метод Update.
 
 ```c#
 void Update()
@@ -163,7 +163,7 @@ void Update()
     }
 ```
 
-9. Модифицировать скрипт DragonPicker, а именно создать новый метод DestroyDragonEgg.
+5. Модифицировать скрипт DragonPicker, а именно создать новый метод DestroyDragonEgg.
 
 ```c#
 public void DestroyDragonEgg()
@@ -237,53 +237,83 @@ public class DragonPicker : MonoBehaviour
     }
 }
 ```
-5. Проверить, что игра возвращается в изначальное состояние при потере всех энергетических щитов.
+2. Проверить, что игра возвращается в изначальное состояние при потере всех энергетических щитов.
 
 ![bandicam 2022-10-24 16-08-05-479](https://user-images.githubusercontent.com/74662720/197580373-9bcf6ab9-4333-4d8c-89e5-33c980ab58bc.gif)
 
-7. Оформить сцену. Для этого нужно загрузить и импортировать из Unity Asset Store пакет Autumn Mountain.
+3. Оформить сцену. Для этого нужно загрузить и импортировать из Unity Asset Store пакет Autumn Mountain.
 
 ![осенняя гора](https://user-images.githubusercontent.com/74662720/197580481-1d0da700-a026-4bc2-9304-8e3c0b86cccc.png)
 
-9. Сделаать дубликат префаба Free_Mountain, переименовать его в DragonMountain, переместить в папку со сценой, а затем - в окно иерархии.
+4. Сделаать дубликат префаба Free_Mountain, переименовать его в DragonMountain, переместить в папку со сценой, а затем - в окно иерархии.
 
 ![и там и тут](https://user-images.githubusercontent.com/74662720/197580995-f36f1d04-600b-4e6c-85c9-03f23dcf9be6.png)
 
-11. Изменить положение и размер объекта.
+5. Изменить положение и размер объекта.
 
 ![поставила гору](https://user-images.githubusercontent.com/74662720/197580834-2d3683bf-613d-4ffd-8b48-27bb8cea47ef.png)
 
-11. Папку SkyBox перенести в папку сцены. Window -> rendering  -> lighting -> environment. Environment lighting -> source -> skybox  -> free_skybox
+6. Папку SkyBox перенести в папку сцены.
+7. В окне Lighting в качестве Skybox Material назначить Free_skybox
 
 ![добавили небо](https://user-images.githubusercontent.com/74662720/197581203-98e359f3-98ba-458a-862f-c7246d09da13.png)
 
 
 #### Часть 2 - структурирование файлов проекта и подготовка к сборке.
 Ход работы:
-1. Создаём разные папки для разных файлов.
-2. Материалы, текстуры и анимации, которые мы использовали, достаём из скаченных папок и помещаем в наши соответствующие папки папку. Лишние ассет-паки удалить. Skybox в папку с текстурами. FreeMountain в префабы.
-3. Проверить, что ничего не поломалось.
+1. Создаём разные папки для разных типов файлов.
+
+![папочки](https://user-images.githubusercontent.com/74662720/197582276-5b1b3561-23aa-4b92-8e6f-fbd06c1f7e38.png)
+
+2. Материалы, текстуры, префабы и анимации, которые были скачаны, переместить в созданные папки. Лишние пакеты удалить. Созданные нами скрипты, материалы и префабы также рассортировать по папкам.
+3. Таким образом, файлы структурированы и готовы к сборке.
+
+Префабы:
+![префабы](https://user-images.githubusercontent.com/74662720/197583112-314928a1-f90a-404b-b91a-513a201571cc.png)
+
+Материалы:
+![материалы](https://user-images.githubusercontent.com/74662720/197583115-1deed21d-8e6a-4e76-a0e9-ee9786fcec5e.png)
+
+Анимации:
+![анимации](https://user-images.githubusercontent.com/74662720/197583117-75047c9e-2862-4fff-b7dd-471192d3bbab.png)
+
+Текстуры:
+![текстуры](https://user-images.githubusercontent.com/74662720/197583118-742cf8e0-4a9b-47ab-88c6-aa12fb14e7a1.png)
+
+Скрипты:
+![скрипты](https://user-images.githubusercontent.com/74662720/197583119-7f469c54-34e5-4075-8e78-2075a7fd49b0.png)
+
+Сцены:
+![сцены](https://user-images.githubusercontent.com/74662720/197583122-88e6aa9a-ddbd-42ae-985d-d5f742133fd1.png)
+
 
 ## Задание 3
 ### Пошагово выполнить задания из видео-материала «Интеграция игровых сервисов в готовое приложение» с описанием и примерами реализации задач.
 Ход работы:
-1. File -> build settings  -> добавим нашу сцену  ->  webgl  -> install with unity hub
-2. установить webgl build support
-3. switch platform
-4. player settings -> normal quality
-5. compression format: disabled
-6. build and run
-7. работает??
-8. импортировать pluginYG
-9. В каждой сцене нашеего объекта должен быть объект YandexGame
-10. player settings -> resolution and presentation -> pluginYG 
-11. build
-12. отдельная папка под яндекс
-13. проверим. открыввем index с помощью VSC 109 cnhjr
-14. делаем архив зип из яндекс билда
-15. в черновик загружаем наш архив.
-16. проверим, что черновик работает
-17. сохраняем
+1. В Build Settings добавим нашу сцену, выбрать платформу WebGL и переключить платформу.
+
+![уже установлен веб](https://user-images.githubusercontent.com/74662720/197584273-42446d49-7c5e-4ce9-8333-69b1a0c53071.png)
+
+5. В Player Settings у свойства Lightmap Encoding выбрать Normal Quality.
+
+![выбрали норм качество](https://user-images.githubusercontent.com/74662720/197584679-0291ee56-b80e-4de4-ab5f-d83208b0162f.png)
+
+7. Compression format назначить Disabled.
+
+![формат компрессии дизэйблд](https://user-images.githubusercontent.com/74662720/197585040-32f003d9-5033-43b1-b714-895ce006c0f7.png)
+
+9. После нажатия на Build and run и выбора папки сборка готова. Приложение запустилось в браузере
+10. работает??
+11. импортировать pluginYG
+12. В каждой сцене нашеего объекта должен быть объект YandexGame
+13. player settings -> resolution and presentation -> pluginYG 
+14. build
+15. отдельная папка под яндекс
+16. проверим. открыввем index с помощью VSC 109 cnhjr
+17. делаем архив зип из яндекс билда
+18. в черновик загружаем наш архив.
+19. проверим, что черновик работает
+20. сохраняем
  
 ## Выводы
 
