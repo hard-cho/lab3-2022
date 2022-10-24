@@ -1,4 +1,4 @@
-# Реализация рейтинговой системы пользователей и ее интеграция в пользовательский интерфейс
+# Разработка игры и интеграция сервисов в пользовательский интерфейс
 Отчет по лабораторной работе #3 выполнила:
 - Россихина Ирина Александровна
 - РИ-300002
@@ -294,37 +294,40 @@ public class DragonPicker : MonoBehaviour
 
 ![уже установлен веб](https://user-images.githubusercontent.com/74662720/197584273-42446d49-7c5e-4ce9-8333-69b1a0c53071.png)
 
-5. В Player Settings у свойства Lightmap Encoding выбрать Normal Quality.
+2. В Player Settings у свойства Lightmap Encoding выбрать Normal Quality.
 
 ![выбрали норм качество](https://user-images.githubusercontent.com/74662720/197584679-0291ee56-b80e-4de4-ab5f-d83208b0162f.png)
 
-7. Compression format назначить Disabled.
+3. Compression format назначить Disabled.
 
 ![формат компрессии дизэйблд](https://user-images.githubusercontent.com/74662720/197585040-32f003d9-5033-43b1-b714-895ce006c0f7.png)
 
-9. После нажатия на Build and run и выбора папки сборка готова. Приложение запустилось в браузере.
+4. После нажатия на Build and run и выбора папки сборка готова. Приложение запустилось в браузере.
 
 ![открылась в браузере](https://user-images.githubusercontent.com/74662720/197586102-033de9c9-675a-41c9-8eea-7e5a7a1ea092.png)
 
-12. Импортировать плагин Яндекс.Игр.
+5. Импортировать плагин Яндекс.Игр.
 
 ![импорт пакета](https://user-images.githubusercontent.com/74662720/197586189-dfd030ab-bc64-4c97-9e60-34d4875949b1.png)
 
-14. Добавить объект YandexGame на сцену.
+6. Добавить объект YandexGame на сцену.
 
 ![создали яг объект](https://user-images.githubusercontent.com/74662720/197586458-fad6d9c3-4cda-439e-9803-e025a29448ea.png)
 
-16. В Player settings во вкладке Resolution and Presentation выбрать PluginYG.
+7. В Player settings во вкладке Resolution and Presentation выбрать PluginYG.
 
 ![выбрали нужный плагин](https://user-images.githubusercontent.com/74662720/197586786-345da0c9-c82b-4a04-a72c-c74ea9b7ff50.png)
 
-18. build
-19. отдельная папка под яндекс
-20. проверим. открыввем index с помощью VSC 109 cnhjr
-21. делаем архив зип из яндекс билда
-22. в черновик загружаем наш архив.
-23. проверим, что черновик работает
-24. сохраняем
+8. Выполнить сборку для Яндекса.
+9. В сборке появился файл index.html. В самом файле есть необходимые компоненты, значит, сборка выполнена правильно.
+
+![есть 2](https://user-images.githubusercontent.com/74662720/197587755-a9436dca-569d-487e-8940-3bbc7d424792.png)
+
+10. Заархивировать сборку в формате .zip и загрузить в черновик игры в консоли Яндекс.Игр. Дождаться окончания проверки файла.
+11. После проверки доступна ссылка на [черновик](https://yandex.ru/games/app/197998?draft=true&lang=ru).
+
+![bandicam 2022-10-24 22-30-25-309](https://user-images.githubusercontent.com/74662720/197589268-006c974d-65d4-4d84-b59f-cf4e9c0e8870.gif)
+
  
 ## Выводы
 
