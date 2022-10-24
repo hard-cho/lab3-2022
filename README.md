@@ -80,10 +80,22 @@ private void OnCollisionEnter(Collision other)
 
 ![bandicam 2022-10-24 14-35-13-100](https://user-images.githubusercontent.com/74662720/197575764-e7a6ede9-268f-4d37-ad58-ea50bdada3e0.gif)
 
-9. Создадим TextMeshPro, который в будущем будет хранить значения набранных очков. Дать этому объекту имя Score.
-10. Настроить Canvas. В свойстве Render Mode назначить Screen Space - Camera, а в качестве Render Camera назначить Main Camera. Свойству Plane Distance установить значение 10.
-11. Переместить объект score.
-12. Проверить работоспособность.
+9. Создать TextMeshPro, который в будущем будет хранить значения набранных очков. Дать этому объекту имя Score.
+
+![создали score](https://user-images.githubusercontent.com/74662720/197576188-3df9a22f-581f-4e78-999c-b3b3ef1cae61.png)
+
+11. Настроить Canvas. В свойстве Render Mode назначить Screen Space - Camera, а в качестве Render Camera назначить Main Camera. Свойству Plane Distance установить значение 10.
+
+![настроили canvas](https://user-images.githubusercontent.com/74662720/197576334-29a270c6-686b-4355-ad88-bd747ddccf59.png)
+
+13. Настроить положение объекта Score.
+
+![настроили положение и размер](https://user-images.githubusercontent.com/74662720/197576486-2d272ba8-f6ac-4531-a0c7-257f518b7843.png)
+
+15. Проверить работоспособность.
+
+![какая-то надпись в углу экрана](https://user-images.githubusercontent.com/74662720/197576524-a1116ab5-8555-49b3-b6da-02f79ae3912b.png)
+
 
 #### Часть 2 - создание графического пользовательского интерфейса.
 Ход работы:
