@@ -1,0 +1,530 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.9f1 (ad3870b89536) revision 11352176'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 16215 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Unity_Project/Dragon Picker
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+61183
+Successfully changed project path to: C:/Unity_Project/Dragon Picker
+C:/Unity_Project/Dragon Picker
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 99.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.9f1 (ad3870b89536)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity_Project/Dragon Picker/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3991 MB
+    Driver:   27.21.14.6262
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007529 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 75.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.618 seconds
+Domain Reload Profiling:
+	ReloadAssembly (619ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (417ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (98ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (245ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (116ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005693 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.035 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1036ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (835ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (306ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3408 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (111.6 KB). Loaded Objects now: 3867.
+Memory consumption went from 119.9 MB to 119.8 MB.
+Total: 3.089700 ms (FindLiveObjects: 0.287900 ms CreateObjectMapping: 0.205700 ms MarkObjects: 2.484300 ms  DeleteObjects: 0.110900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007452 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.127 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1128ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (884ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (382ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3389 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.3 KB). Loaded Objects now: 3870.
+Memory consumption went from 118.5 MB to 118.4 MB.
+Total: 3.449200 ms (FindLiveObjects: 0.517000 ms CreateObjectMapping: 0.415000 ms MarkObjects: 2.421800 ms  DeleteObjects: 0.093800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005301 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1039ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (801ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (283ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (344ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3389 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.3 KB). Loaded Objects now: 3873.
+Memory consumption went from 118.5 MB to 118.4 MB.
+Total: 3.133200 ms (FindLiveObjects: 0.287500 ms CreateObjectMapping: 0.199600 ms MarkObjects: 2.539700 ms  DeleteObjects: 0.105500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004781 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.016 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1017ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (783ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (341ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Refreshing native plugins compatible for Editor in 1.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3389 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.3 KB). Loaded Objects now: 3876.
+Memory consumption went from 118.5 MB to 118.4 MB.
+Total: 2.604900 ms (FindLiveObjects: 0.252000 ms CreateObjectMapping: 0.156600 ms MarkObjects: 2.123500 ms  DeleteObjects: 0.072300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007210 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.027 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1028ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (796ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (286ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (336ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3389 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.1 KB). Loaded Objects now: 3879.
+Memory consumption went from 118.5 MB to 118.5 MB.
+Total: 2.812800 ms (FindLiveObjects: 0.250700 ms CreateObjectMapping: 0.166400 ms MarkObjects: 2.307000 ms  DeleteObjects: 0.087600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005435 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity_Project\Dragon Picker\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Domain Reload Profiling:
+	ReloadAssembly (951ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (727ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'Custom/AdditiveTintable': fallback shader 'Particles/Additive (Soft)' not found
+Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3389 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.2 KB). Loaded Objects now: 3882.
+Memory consumption went from 118.5 MB to 118.5 MB.
+Total: 2.575200 ms (FindLiveObjects: 0.236200 ms CreateObjectMapping: 0.183500 ms MarkObjects: 2.075000 ms  DeleteObjects: 0.079700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 536682.817717 seconds.
+  path: Assets/PyroParticles/Prefab/Materials/FireParticleMeteorPhysicsMaterial.physicMaterial
+  artifactKey: Guid(9dbc457aacb4ed945a27532a755ba760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Materials/FireParticleMeteorPhysicsMaterial.physicMaterial using Guid(9dbc457aacb4ed945a27532a755ba760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f72bfaa025c46b69cde36d893a9e8d') in 0.038738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.630214 seconds.
+  path: Assets/FreeMountain/Textures/diff.psd
+  artifactKey: Guid(ea21e7249d2de19448ef7795ee426588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMountain/Textures/diff.psd using Guid(ea21e7249d2de19448ef7795ee426588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed9b1a624b8da602f1bfc94385bc7c7') in 0.050817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.249368 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleCloudBlack.png
+  artifactKey: Guid(830884c18cf5e7a4895ee02c2dcd8e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleCloudBlack.png using Guid(830884c18cf5e7a4895ee02c2dcd8e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6189fe52c0c5f67fc808e7914aed39e4') in 0.062524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleFireballSheetTexture.png
+  artifactKey: Guid(87be4190eae46cf459ae6177b8698f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleFireballSheetTexture.png using Guid(87be4190eae46cf459ae6177b8698f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906190d16883dd0c020195fec6c742a8') in 0.015648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleSparksSheetTexture.png
+  artifactKey: Guid(4eac9de9dc646674fa401db81b60e492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleSparksSheetTexture.png using Guid(4eac9de9dc646674fa401db81b60e492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ab965371d7ec0b283e396bc2805278') in 0.015592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleGlowTexture.png
+  artifactKey: Guid(c3d66a8056f9db345b1ea380aa7e815d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleGlowTexture.png using Guid(c3d66a8056f9db345b1ea380aa7e815d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a8d0f2985c427905772ff251121041') in 0.013458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare3Texture.jpg
+  artifactKey: Guid(df67249c6b5af0e458bba9ec5774c765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare3Texture.jpg using Guid(df67249c6b5af0e458bba9ec5774c765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed64c8405f431ef20dd45a37c1225201') in 0.022935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare2TextureMap.jpg
+  artifactKey: Guid(18be13f7940e89b48a752726d91f5ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare2TextureMap.jpg using Guid(18be13f7940e89b48a752726d91f5ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2d487191266efa7f35558c8818225a') in 0.055013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare3TextureMap.jpg
+  artifactKey: Guid(af783ca33be7c4b41a28d909b798cfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare3TextureMap.jpg using Guid(af783ca33be7c4b41a28d909b798cfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc20aa8b688610eee1d9ebe1ea4e2057') in 0.021869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleMeteor2Texture.png
+  artifactKey: Guid(5d48ba782166f6a4591cc04a497c92a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleMeteor2Texture.png using Guid(5d48ba782166f6a4591cc04a497c92a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec051b067f701dacb738d0075eaca610') in 0.029185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare4Texture.jpg
+  artifactKey: Guid(b5e907d6678f11941857317901b1f385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare4Texture.jpg using Guid(b5e907d6678f11941857317901b1f385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa158f89ee355f7f71db57552d4ef66') in 0.022189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare4TextureMap.jpg
+  artifactKey: Guid(71a140d2ef8bfbf4184bc56b8e2b66d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PyroParticles/Prefab/Textures/FireParticleMeteorSquare4TextureMap.jpg using Guid(71a140d2ef8bfbf4184bc56b8e2b66d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0cedd9121c1c7fda062fff91ca14a5') in 0.024635 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
