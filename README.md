@@ -181,14 +181,82 @@ public void DestroyDragonEgg()
 ### Используя видео-материалы практических работ 3 и 4, повторить реализацию игровых механик:
 #### Часть 1 - реализация потери энергетического щита (потери жизни) и оформление сцены.
 Ход работы:
-1. Модифицируем скрипт DragonPicker.
-2. Проверяем. Получаем IndexOutOfRange.
-3. Добавим строки в скрипт DragonPicker в метод DragonEggDestroyed (DestroyDragonEgg).
-4. Проверим. Игра возвращается в изначаленое состояние при потере всех энергетических щитов.
-5. Оформим сцену. Для этого загрузим и импортируем из Unity Asset Store пакет Autumn Mountain.
-6. FreeMountain -> Prefabs -> делаем дубликат, переименуем его в DragonMountain и переместим в папку со сценой, а затем в онко иерархии. Изменим положение и размер горы.
-7. Папку SkyBox перенесём в папку сцены. Window -> rendering  -> lighting -> environment. Environment lighting -> source -> skybox  -> free_skybox
-8. Смотрим на красоту.
+1. Модифицировать скрипт DragonPicker. Теперь он выглядит следующим образом:
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class DragonPicker : MonoBehaviour
+{
+    public GameObject energyShieldPrefab;
+    public int numEnergyShield = 3;
+    public float energyShieldBottomY = -6f;
+    public float energyShieldRadius = 1.5f;
+
+    public List<GameObject> shieldList;
+    public List<GameObject> dragonEggList;
+
+    void Start()
+    {
+        shieldList = new List<GameObject>();
+
+        for (int i = 1; i <= numEnergyShield; i++)
+        {
+            GameObject tShieldGo = Instantiate<GameObject>(energyShieldPrefab);
+            tShieldGo.transform.position = new Vector3(0, energyShieldBottomY, 0);
+            tShieldGo.transform.localScale = new Vector3(1*i, 1*i, 1*i);
+            shieldList.Add(tShieldGo);
+        }
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void DestroyDragonEgg()
+    {
+        dragonEggList = new List<GameObject>();
+        dragonEggList.Add(GameObject.FindGameObjectWithTag("Dragon Egg"));
+        foreach (GameObject tGO in dragonEggList)
+        {
+            Destroy(tGO);
+        }
+        int shieldIndex = shieldList.Count - 1;
+        GameObject tShieldGo = shieldList[shieldIndex];
+        shieldList.RemoveAt(shieldIndex);
+        Destroy(tShieldGo);
+
+        if (shieldList.Count == 0)
+        {
+            SceneManager.LoadScene("_0Scene");
+        }
+    }
+}
+```
+5. Проверить, что игра возвращается в изначальное состояние при потере всех энергетических щитов.
+
+![bandicam 2022-10-24 16-08-05-479](https://user-images.githubusercontent.com/74662720/197580373-9bcf6ab9-4333-4d8c-89e5-33c980ab58bc.gif)
+
+7. Оформить сцену. Для этого нужно загрузить и импортировать из Unity Asset Store пакет Autumn Mountain.
+
+![осенняя гора](https://user-images.githubusercontent.com/74662720/197580481-1d0da700-a026-4bc2-9304-8e3c0b86cccc.png)
+
+9. Сделаать дубликат префаба Free_Mountain, переименовать его в DragonMountain, переместить в папку со сценой, а затем - в окно иерархии.
+
+![и там и тут](https://user-images.githubusercontent.com/74662720/197580995-f36f1d04-600b-4e6c-85c9-03f23dcf9be6.png)
+
+11. Изменить положение и размер объекта.
+
+![поставила гору](https://user-images.githubusercontent.com/74662720/197580834-2d3683bf-613d-4ffd-8b48-27bb8cea47ef.png)
+
+11. Папку SkyBox перенести в папку сцены. Window -> rendering  -> lighting -> environment. Environment lighting -> source -> skybox  -> free_skybox
+
+![добавили небо](https://user-images.githubusercontent.com/74662720/197581203-98e359f3-98ba-458a-862f-c7246d09da13.png)
+
 
 #### Часть 2 - структурирование файлов проекта и подготовка к сборке.
 Ход работы:
