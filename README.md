@@ -302,18 +302,29 @@ public class DragonPicker : MonoBehaviour
 
 ![формат компрессии дизэйблд](https://user-images.githubusercontent.com/74662720/197585040-32f003d9-5033-43b1-b714-895ce006c0f7.png)
 
-9. После нажатия на Build and run и выбора папки сборка готова. Приложение запустилось в браузере
-10. работает??
-11. импортировать pluginYG
-12. В каждой сцене нашеего объекта должен быть объект YandexGame
-13. player settings -> resolution and presentation -> pluginYG 
-14. build
-15. отдельная папка под яндекс
-16. проверим. открыввем index с помощью VSC 109 cnhjr
-17. делаем архив зип из яндекс билда
-18. в черновик загружаем наш архив.
-19. проверим, что черновик работает
-20. сохраняем
+9. После нажатия на Build and run и выбора папки сборка готова. Приложение запустилось в браузере.
+
+![открылась в браузере](https://user-images.githubusercontent.com/74662720/197586102-033de9c9-675a-41c9-8eea-7e5a7a1ea092.png)
+
+12. Импортировать плагин Яндекс.Игр.
+
+![импорт пакета](https://user-images.githubusercontent.com/74662720/197586189-dfd030ab-bc64-4c97-9e60-34d4875949b1.png)
+
+14. Добавить объект YandexGame на сцену.
+
+![создали яг объект](https://user-images.githubusercontent.com/74662720/197586458-fad6d9c3-4cda-439e-9803-e025a29448ea.png)
+
+16. В Player settings во вкладке Resolution and Presentation выбрать PluginYG.
+
+![выбрали нужный плагин](https://user-images.githubusercontent.com/74662720/197586786-345da0c9-c82b-4a04-a72c-c74ea9b7ff50.png)
+
+18. build
+19. отдельная папка под яндекс
+20. проверим. открыввем index с помощью VSC 109 cnhjr
+21. делаем архив зип из яндекс билда
+22. в черновик загружаем наш архив.
+23. проверим, что черновик работает
+24. сохраняем
  
 ## Выводы
 
