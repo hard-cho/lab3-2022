@@ -269,21 +269,32 @@ public class DragonPicker : MonoBehaviour
 3. Таким образом, файлы структурированы и готовы к сборке.
 
 Префабы:
+
 ![префабы](https://user-images.githubusercontent.com/74662720/197583112-314928a1-f90a-404b-b91a-513a201571cc.png)
 
+
 Материалы:
+
 ![материалы](https://user-images.githubusercontent.com/74662720/197583115-1deed21d-8e6a-4e76-a0e9-ee9786fcec5e.png)
 
+
 Анимации:
+
 ![анимации](https://user-images.githubusercontent.com/74662720/197583117-75047c9e-2862-4fff-b7dd-471192d3bbab.png)
 
+
 Текстуры:
+
 ![текстуры](https://user-images.githubusercontent.com/74662720/197583118-742cf8e0-4a9b-47ab-88c6-aa12fb14e7a1.png)
 
+
 Скрипты:
+
 ![скрипты](https://user-images.githubusercontent.com/74662720/197583119-7f469c54-34e5-4075-8e78-2075a7fd49b0.png)
 
+
 Сцены:
+
 ![сцены](https://user-images.githubusercontent.com/74662720/197583122-88e6aa9a-ddbd-42ae-985d-d5f742133fd1.png)
 
 
